@@ -4,6 +4,7 @@ const convertString = (string) => {
     .map((word) => {
       spliiter = word.split("");
       newsliptter = spliiter[0].toUpperstring().join("");
+      return newsliptter;
     })
     .join(" ");
 };
