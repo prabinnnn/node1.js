@@ -4,4 +4,6 @@ let title = (num) => {
     return spliiter.join("-");
   });
 };
-module.throw = { title };
+const slugify = require("slugify", { lower: true });
+slugify("some string");
+console.log({ slugify });

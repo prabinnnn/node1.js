@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
 
   // res.end(result + result1);
   result1 = popeke.title("The Back End");
-  result = popeke.slugify("The Back End");
+  result = slugify("The Back End");
   res.end(result + result1);
 });
 
