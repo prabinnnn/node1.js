@@ -1,8 +1,9 @@
-const event = require("event");
+const event = require("events");
 const eventEmitter = new event.EventEmitter();
 
-const sayhello = () => {
-  console.log("i am hello");
+const sayHello = () => {
+  console.log("I am hello");
 };
-eventEmitter.addlistener("hello", sayhello);
+
+eventEmitter.addListener("hello", sayHello);
 eventEmitter.emit("hello");
