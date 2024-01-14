@@ -2,10 +2,11 @@ const convertString = (string) => {
   return string
     .split(" ")
     .map((word) => {
-      spliiter = word.split("");
-      newsliptter = spliiter[0].toUpperstring().join("");
-      return newsliptter;
+      let spliiter = word.split("");
+      spliiter[0] = spliiter[0].toUpperCase(); // Fix the typo here
+      return spliiter.join("");
     })
     .join(" ");
 };
+
 module.exports = { convertString };
